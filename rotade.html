@@ -1,0 +1,91 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>transalate</title>
+    <script type="text/javascript">
+
+    function draw() {
+
+      var c = document.getElementById("Canvas");
+var ctx = c.getContext("2d");
+
+function smiley(){
+
+  ctx.fillStyle='rgb(252,219,3)';
+ctx.beginPath();
+ctx.arc(305,165,100,0,2*Math.PI);
+ctx.fill();
+
+
+
+// ctx.fillStyle='rgb(252,61,3)'
+
+ctx.fillStyle='rgb(233, 234, 240)';
+ctx.beginPath();
+ctx.arc(330,125,25,0,2*Math.PI);
+// ctx.fillStyle='white'
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(325,120,10,0,2*Math.PI);
+ctx.fillStyle='black'
+ctx.fill();
+
+// left eyes
+ctx.fillStyle='rgb(233, 234, 240)';
+ctx.beginPath();
+ctx.arc(255,155,18,0,2*Math.PI);
+// ctx.fillStyle='white'
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(260,160,8,0,2*Math.PI);
+ctx.fillStyle='black'
+ctx.fill();
+
+// mouth
+
+
+ctx.beginPath();
+ctx.arc(305,180,50,1.85*Math.PI,0.93*Math.PI);
+ctx.fillStyle='white'
+ctx.fill();
+
+ctx.fillStyle='rgb(184, 109, 29)';
+ctx.beginPath();
+ctx.arc(305,182,50,1.93*Math.PI,0.85*Math.PI);
+// ctx.fillStyle='white'
+ctx.fill();
+
+// jibba
+
+ctx.fillStyle='rgb(247, 96, 114)';
+ctx.beginPath();
+ctx.arc(305,185,25,1.93*Math.PI,0.85*Math.PI);
+// ctx.fillStyle='white'
+ctx.fill();
+
+}
+
+smiley();
+ctx.translate(200,200);
+smiley();
+ctx.rotate((Math.PI / 180) * 50);
+smiley();
+
+
+ 
+}
+
+   </script>
+    <style type="text/css">
+      canvas { border: 1px solid black; }
+    </style>
+  </head>
+  <body onload="draw();">
+    <canvas id="Canvas" width="5000" height="5000"></canvas>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>graphich design</title>
+
+	<script type="text/javascript">
+
+		function drow() {
+
+			var	canvas=document.getElementById('dipu')
+			if (canvas.getContext) {
+
+                var ctx=canvas.getContext('2d')
+
+                ctx.fillStyle='rgba(120,160,0,1)';
+                ctx.fillRect(10,20,30,30);
+
+
+
+
+			}
+			// body...
+		}
+		
+     
+
+
+
+	</script>
+
+</head>
+<body onload="drow();">
+
+	<canvas id="dipu" width="1000" height="1000"></canvas>
+
+</body >
+</html>
